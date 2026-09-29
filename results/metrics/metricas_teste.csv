@@ -1,0 +1,2 @@
+Modelo,Acurácia,Precisão (mau pagador),Recall (mau pagador),F1 (mau pagador),ROC AUC,Average precision
+RandomForestClassifier,0.9661729749497165,0.20447284345047922,0.34594594594594597,0.2570281124497992,0.7617605143504893,0.14680134594632518
