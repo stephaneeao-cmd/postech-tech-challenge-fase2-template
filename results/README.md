@@ -9,6 +9,18 @@
 Modelos podem ser regenerados rodando os notebooks; figuras e métricas ficam versionadas
 para que o avaliador veja os resultados sem executar nada.
 
+## Como reproduzir
+
+Execute os notebooks na ordem `01_eda.ipynb` → `02_preprocessamento.ipynb` →
+`03_modelagem.ipynb` → `04_avaliacao.ipynb`. O notebook 02 gera o dataset tratado;
+o 03 compara os modelos e salva `models/best_model.joblib`; o 04 carrega esse modelo
+para gerar as métricas e gráficos do teste. O arquivo `.joblib` é ignorado pelo Git,
+então é necessário executar o notebook 03 antes do 04 em um ambiente novo.
+
+O alvo marca `TARGET = 1` quando há pelo menos um atraso de 60 dias ou mais no
+histórico observado. `TARGET = 0` significa que não foi observado atraso dessa
+gravidade; não significa necessariamente que o cliente nunca atrasou pagamentos.
+
 ## Arquivos gerados
 
 As figuras são exportadas pelos notebooks 01, 03 e 04:
@@ -17,13 +29,14 @@ As figuras são exportadas pelos notebooks 01, 03 e 04:
 - `figures/02_correlacoes.png` — correlações entre variáveis numéricas.
 - `figures/03_valores_extremos.png` — renda, filhos e tamanho da família.
 - `figures/04_balanceamento_alvo.png` — quantidade de clientes em cada classe.
-- `figures/05_comparacao_modelos.png` — F1 médio dos cinco modelos na validação cruzada.
+- `figures/05_comparacao_modelos.png` — F1 médio dos cinco modelos na validação cruzada por perfil.
 - `figures/06_matriz_confusao.png` e `figures/07_curva_roc.png` — avaliação no conjunto de teste.
 - `figures/08_importancia_variaveis.png` — variáveis mais usadas pelo modelo selecionado.
 
 As tabelas ficam em `metrics/`:
 
-- `validacao_cruzada.csv` — recall, F1 e balanced accuracy de cada modelo.
+- `validacao_cruzada.csv` — recall, F1 e balanced accuracy em divisões aleatórias e por perfil. A divisão por perfil mantém características idênticas juntas; ela é mais rigorosa e pode resultar em métricas menores, pois testa combinações que o modelo não viu no treino.
+- `auditoria_perfis.csv` — contagem de perfis repetidos e perfis com alvos diferentes.
 - `metricas_teste.csv` — métricas do modelo selecionado no conjunto de teste.
 - `importancia_variaveis.csv` — importância das variáveis do modelo selecionado.
 

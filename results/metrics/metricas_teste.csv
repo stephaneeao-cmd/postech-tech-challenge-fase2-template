@@ -1,2 +1,2 @@
-Modelo,Acurácia,Precisão (mau pagador),Recall (mau pagador),F1 (mau pagador),ROC AUC,Average precision
-RandomForestClassifier,0.9661729749497165,0.20447284345047922,0.34594594594594597,0.2570281124497992,0.7617605143504893,0.14680134594632518
+Modelo,Acurácia,Precisão (atraso grave),Recall (atraso grave),F1 (atraso grave),ROC AUC,Average precision
+DecisionTreeClassifier,0.9441700960219479,0.03896103896103896,0.0975609756097561,0.05568445475638051,0.5292692001846767,0.023698484392251334
