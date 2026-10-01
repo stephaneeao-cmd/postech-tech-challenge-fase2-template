@@ -43,7 +43,7 @@ As figuras são exportadas pelos notebooks 01, 03 e 04:
 As tabelas ficam em `metrics/`:
 
 - `validacao_cruzada.csv` — recall, F1 e balanced accuracy em divisões aleatórias e por perfil. A divisão por perfil mantém características idênticas juntas; ela é mais rigorosa e pode resultar em métricas menores, pois testa combinações que o modelo não viu no treino.
-- `auditoria_perfis.csv` — contagem de perfis repetidos e perfis com alvos diferentes.
+- `analise_perfis_repetidos.csv` — contagem de perfis repetidos e perfis com valores diferentes de `TARGET`.
 - `metricas_teste.csv` — métricas do modelo selecionado no conjunto de teste.
 - `importancia_variaveis.csv` — importância das variáveis do modelo selecionado.
 
