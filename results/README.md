@@ -21,6 +21,13 @@ O alvo marca `TARGET = 1` quando há pelo menos um atraso de 60 dias ou mais no
 histórico observado. `TARGET = 0` significa que não foi observado atraso dessa
 gravidade; não significa necessariamente que o cliente nunca atrasou pagamentos.
 
+O dicionário das duas bases e a correspondência entre nomes originais e nomes em
+português estão no notebook 01. No dataset tratado, idade e tempo de trabalho estão
+em anos e aparecem como `IDADE_ANOS` e `TEMPO_TRABALHO_ANOS`; os CSVs brutos mantêm
+os nomes originais. No EDA, o gráfico de distribuição converte a idade para anos
+somente para facilitar a leitura; a matriz de correlação usa idade e tempo de
+trabalho nos valores originais em dias.
+
 ## Arquivos gerados
 
 As figuras são exportadas pelos notebooks 01, 03 e 04:
