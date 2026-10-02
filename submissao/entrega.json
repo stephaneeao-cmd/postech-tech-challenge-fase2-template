@@ -1,9 +1,12 @@
 {
   "turma": "12DTAT",
-  "grupo": "Grupo 00",
+  "grupo": "Grupo 5",
   "integrantes": [
-    { "nome": "Nome Completo do Integrante", "rm": "RM000000" },
-    { "nome": "Nome Completo do Integrante", "rm": "RM000000" }
+    { "nome": "Stephane Abreu de Oliveira", "rm": "RM377745" },
+    { "nome": "Bruno Alves de Moura Soares", "rm": "RM377837" },
+    { "nome": "Dalura Lummy Dionisio de Moraes Fernandes", "rm": "RM377761" },
+    { "nome": "Felipe Roberto Luvizotti", "rm": "RM377822" },
+    { "nome": "Melissa Santiago dos Santos Cruz", "rm": "RM377778" }
   ],
   "links": {
     "repositorio": "https://github.com/usuario/nome-do-repositorio",
