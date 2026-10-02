@@ -1,8 +1,5 @@
 # Tech Challenge — Fase 2 | POSTECH Data Analytics
 
-> **INSTRUÇÕES:** este README é um template. Substitua **todos** os blocos marcados com
-> `<!-- PREENCHER -->` e apague as linhas de instrução antes de submeter.
-
 ---
 
 ## 1. Identificação
@@ -31,7 +28,7 @@ Estes três links são **obrigatórios** e devem ser idênticos aos do PDF de su
 
 | Item | Link |
 |---|---|
-| Repositório | <!-- PREENCHER: URL pública do GitHub --> |
+| Repositório | https://github.com/stephaneeao-cmd/tech-challenge-fase2-grupo5 |
 | Vídeo executivo (≤ 5 min) | <!-- PREENCHER: YouTube não listado / Drive com acesso liberado --> |
 | Apresentação | <!-- PREENCHER: link do arquivo em `docs/` ou Drive --> |
 
@@ -54,7 +51,7 @@ Definiu-se `TARGET = 1` (atraso grave) para proponentes com registo de atraso ig
 ### Dataset
 Campo | Valor |
 |---|---|
-| Fonte | Kaggle - Credit Card Approval Prediction |
+| Fonte | Base fornecida pela FIAP ([Google Drive](https://drive.google.com/file/d/1z4yEyiCE_CGCWbvAAZQZSz-5-E5T5eYd/view?usp=sharing)), originalmente do Kaggle — Credit Card Approval Prediction |
 | Linhas × colunas | Aplicações: 438.557 × 18 \| Histórico de crédito: 1.048.575 × 3 |
 | Período / versão | Conjunto público consolidado|
 | Licença de uso | Domínio Público (CC0) |
@@ -91,8 +88,8 @@ Descrição das variáveis:
 ## 4. Como reproduzir
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
-cd <NOME_DO_REPOSITORIO>
+git clone https://github.com/stephaneeao-cmd/tech-challenge-fase2-grupo5.git
+cd tech-challenge-fase2-grupo5
 
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
@@ -101,7 +98,7 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-Baixe o dataset e coloque o arquivo bruto em `data/raw/` (os dados **não** são versionados —
+Baixe o dataset e coloque os arquivos `application_record.csv` e `credit_record.csv` em `data/raw/` (os dados **não** são versionados —
 veja `data/README.md`).
 
 Depois execute os notebooks nesta ordem:
