@@ -9,19 +9,19 @@
 
 | Campo | Valor |
 |---|---|
-| Turma | <!-- PREENCHER: ex. 12DTAT --> |
-| Grupo | <!-- PREENCHER: ex. Grupo 07 --> |
+| Turma |  2DTATBB |
+| Grupo | Grupo 5 |
 | Data de entrega | <!-- PREENCHER: DD/MM/AAAA --> |
 
 ### Integrantes
 
 | Nome completo | RM | E-mail |
 |---|---|---|
-| <!-- PREENCHER --> | RM000000 | |
-| | | |
-| | | |
-| | | |
-| | | |
+| Stephane Abreu de Oliveira | Pendente | stephaneeao@gmail.com |
+| Bruno Alves de Moura Soares | Pendente | bruno_nfsu@hotmail.com |
+| Dalura Lummy Dionisio de Moraes Fernandes | Pendente | daluralummy@bb.com.br |
+| Felipe Roberto Luvizotti | Pendente | luvizotti@bb.com.br |
+| Melissa Santiago dos Santos Cruz | Pendente | melzinhacruz@gmail.com |
 
 ---
 
